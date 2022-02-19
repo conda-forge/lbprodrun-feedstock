@@ -1,9 +1,9 @@
 About lbprodrun
 ===============
 
-Home: https://pypi.org/project/LbProdRun/
+Home: https://gitlab.cern.ch/lhcb-core/lbprodrun
 
-Package license: GPL-3.0-only
+Package license: GPL-3.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbprodrun-feedstock/blob/master/LICENSE.txt)
 
