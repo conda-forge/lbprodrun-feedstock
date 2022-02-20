@@ -11,7 +11,7 @@ source:
   sha256: b4b9296a76c47db603d3b77f3b3a34bb3985488f1cdd4e08c5094a6480e309ca
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - lb-prod-run = LbProdRun.__main__:app
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools_scm
   run:
     - click ~=8.0
     - lbenv
