@@ -1,11 +1,11 @@
-About lbprodrun
-===============
+About lbprodrun-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbprodrun-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/LbProdRun/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbprodrun-feedstock/blob/main/LICENSE.txt)
 
 Summary: CLI for running LHCb applications from LHCbDIRAC
 
@@ -144,7 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@chrisburr](https://github.com/chrisburr/)
-
-
-<!-- dummy commit to enable rerendering -->
 
