@@ -1,6 +1,5 @@
 {% set name = "lbprodrun" %}
-{% set version = "1.4.1" %}
-
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/LbProdRun-{{ version }}.tar.gz
-  sha256: 41666d84ad4b5a57250f9efde58275dfa22c6d56972923313501a6a265fedff4
+  sha256: 583ed700e4c6ef0987b477facd2e8b386facd519d28acb9862861b8abe43ee63
 
 build:
   number: 0
@@ -19,17 +18,19 @@ build:
 
 requirements:
   host:
+    - python >=3.9
+    - setuptools >=42
+    - wheel
+    - setuptools-scm >=3.4
     - pip
-    - python >=3.9
-    - setuptools_scm
   run:
-    - click ~=8.0
-    - lbenv
-    - packaging
-    - pydantic ~=1.9.1
     - python >=3.9
-    - pyyaml ~=6.0
-    - typer ~=0.4.1
+    - click >=8.0
+    - lbenv
+    - pydantic >=1.10
+    - typer >=0.4.1
+    - packaging
+    - pyyaml >=6.0
 
 test:
   imports:
@@ -41,7 +42,7 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/LbProdRun/
+  home: https://gitlab.cern.ch/lhcb-core/lbprodrun
   summary: CLI for running LHCb applications from LHCbDIRAC
   license: GPL-3.0-only
   license_file: LICENSE
