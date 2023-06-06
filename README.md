@@ -3,7 +3,7 @@ About lbprodrun-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lbprodrun-feedstock/blob/main/LICENSE.txt)
 
-Home: https://pypi.org/project/LbProdRun/
+Home: https://gitlab.cern.ch/lhcb-core/lbprodrun
 
 Package license: GPL-3.0-only
 
