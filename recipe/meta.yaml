@@ -1,5 +1,5 @@
 {% set name = "lbprodrun" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d488080f685f268ad0e1e8b12ed1de3bba973e72396c15e73d7e0208ba40cf43
+  sha256: b2418d7146a645448e3ec2f18fc369fbfb6f27695922a9baa117fc700970246d
 
 build:
   number: 0
