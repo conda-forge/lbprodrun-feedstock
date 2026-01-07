@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lbprodrun
-  version: "1.11.4"
+  version: "1.12.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 814c2dea3ea98d516fae4752e1f0e0be13e069eb9cd577b5273017102e10db39
+  sha256: 0fd338c9ce5966f584f4e493187dc87836f1cf67a725fa0030d57fb08986c9d8
 
 build:
   number: 0
