@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lbprodrun
-  version: "1.12.4"
+  version: "1.12.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 97abd601868ee4121febf8f6e822b565d543da9c72deb81d8788a790f37d5f03
+  sha256: a8bd37fce8331545b8d606e5499f33d2a152d93ce0c16abd63b67c67f468bc9f
 
 build:
   number: 0
@@ -39,14 +39,16 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - LbProdRun
+      pip_check: true
   - requirements:
       run:
-        - pip
         - python ${{ python_min }}.*
     script:
-      - pip check
       - lb-prod-run --help
 
 about:
